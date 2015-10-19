@@ -1,3 +1,7 @@
+$(function() {
+    $("#sky").attr("height", window.innerHeight).attr("width", window.innerWidth);
+});
+
 (function(){
     var $ = (function(elm){
         return document.querySelector(elm);
