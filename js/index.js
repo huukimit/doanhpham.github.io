@@ -71,7 +71,7 @@
             _this.pos.x = Math.random()*width;
             _this.pos.y = height+Math.random()*100;
             _this.alpha = 0.1+Math.random()*0.3;
-            _this.scale = 0.1+Math.random()*0.3;
+            _this.scale = 0.1+Math.random()*0.4;
             _this.velocity = Math.random();
         }
 
@@ -104,4 +104,33 @@
         });
     });
 
+    // for skill chat jquary
+    $(document).ready(function(e) {
+        var index=0;
+        $(document).scroll(function(){
+            var top = $('.technical').height()-$(window).scrollTop();
+            if (top < -300) {
+                if (index == 0) {
+                    $('.chart').easyPieChart({
+                        easing: 'easeOutBounce',
+                        onStep: function(from, to, percent) {
+                            $(this.el).find('.percent').text(Math.round(percent));
+                        }
+                    });
+
+                }
+
+                index++;
+            }
+        })
+    });
+
+
+    // chart loding
+    $(window).load(function() {
+        var chart = window.chart = $('.chart').data('easyPieChart');
+        $('.js_update').on('click', function() {
+            chart.update(Math.random()*100);
+        });
+    });
 })();
