@@ -11,6 +11,7 @@
         <link rel="shortcut icon" href="../favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
@@ -43,7 +44,7 @@
                                                 <li class="menuItem"><a href="#technical">Skills</a></li>
                                                 <li class="menuItem"><a href="#exprience">Experience</a></li>
                                                 <li class="menuItem"><a href="#education">Education</a></li>
-                                                <li class="menuItem"><a href="#protfolio">Portfolio</a></li>
+                                                <!-- <li class="menuItem"><a href="#protfolio">Portfolio</a></li> -->
                                                 <li class="menuItem"><a href="#contact">Contact</a></li>
                                             </ul>
                                         </div>
@@ -227,7 +228,7 @@
             </section>
             <!--education end-->
             <!--protfolio start-->
-            <section class="protfolio" id="protfolio">
+            <!-- <section class="protfolio" id="protfolio">
                 <div class="container">
                     <div class="heading">
                         <h2>Portfolio</h2>
@@ -268,7 +269,7 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
             <!--protfolio end-->
             <!--contact start-->
             <section id="contact" class="contactDetails">
@@ -276,10 +277,10 @@
                     <!--contact info start-->
                     <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
                         <h4>Contact details</h4>
-                        <p> <i class="fa fa-map-marker fa-lg"></i> Collins Street West Victoria 8007 Australia</p>
-                        <p> <i class="fa fa-mobile fa-lg"></i> +1800 1234 56789</p>
-                        <p> <i class="fa fa-envelope-o "></i> <a href="mailto:support@websitename.com">support@websitename.com</a></p>
-                        <p> <i class="fa fa-link "></i> <a href="www.websitename.com">www.websitename.com</a></p>
+                        <p class="text-left"> <i class="fa fa-map-marker fa-lg"></i> Collins Street West Victoria 8007 Australia</p>
+                        <p class="text-left"> <i class="fa fa-mobile fa-lg"></i> +1800 1234 56789</p>
+                        <p class="text-left"> <i class="fa fa-envelope-o "></i> <a href="mailto:support@websitename.com">support@websitename.com</a></p>
+                        <p class="text-left"> <i class="fa fa-link "></i> <a href="www.websitename.com">www.websitename.com</a></p>
                     </div>
                     <!--contact info end-->
                     <!--contact form start-->
@@ -313,8 +314,14 @@
             </section>
         </div><!-- /container -->
         <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
         <script src="js/rAF.js"></script>
         <script src="js/index.js"></script>
+        <!--for skill chat jquery-->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.easypiechart.js"></script>
+        <!--contact form js-->
+        <script type="text/javascript" src="js/jquery.contact.js"></script>
         <script src="js/stickUp.js"></script>
         <script type="text/javascript">
             jQuery(function($) {
@@ -327,8 +334,8 @@
                             2: 'technical',
                             3: 'exprience',
                             4: 'education',
-                            5: 'protfolio',
-                            6: 'contact'
+                            // 5: 'protfolio',
+                            5: 'contact'
                         },
                         itemClass: 'menuItem',
                         itemHover: 'active',
